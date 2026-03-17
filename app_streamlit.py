@@ -382,7 +382,7 @@ def show_chat() -> None:
 
     for turn in reversed(st.session_state.history):
         st.markdown(f"**You:** {turn['question']}")
-        st.markdown(f"**Assistant:** {turn['answer']}")
+        st.markdown(f"**Your CV answered:** {turn['answer']}")
         with st.expander("Show resume snippets used for this answer"):
             for i, snippet in enumerate(turn["sources"], start=1):
                 st.markdown(f"**Snippet {i}:**")
