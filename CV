@@ -1,0 +1,4 @@
+cd "C:\Users\Tryfonas\Desktop\Cursor Projects\resume-rag"
+git init
+git add .
+git commit -m "Initial commit: Interactive CV app"
