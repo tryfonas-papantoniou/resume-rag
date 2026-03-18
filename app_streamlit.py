@@ -244,10 +244,10 @@ def show_chat() -> None:
     if st.button("← Back to home", key="btn_back_chat"):
         st.query_params["view"] = "home"
         st.rerun()
-    st.title("📄 Chat with My Resume")
+    st.title("📄 Chat with My CV")
     st.write(
-        "Ask my definitely-not-fake resume questions about me! Or upload your own resume!\n\n"
-        "Answers are based **only** on the resume content."
+        "Ask my definitely-not-fake CV questions about me! Or upload your own CV!\n\n"
+        "Answers are based **only** on the CV content."
     )
     st.markdown("**Sample questions:**")
     st.markdown(
@@ -284,9 +284,9 @@ def show_chat() -> None:
         st.caption(f"Next question will use: temperature = {temperature}, k = {k}")
 
         st.markdown("---")
-        st.subheader("Upload resume (optional)")
+        st.subheader("Upload CV (optional)")
         uploaded_file = st.file_uploader(
-            "Upload a PDF resume to use instead of the default `resume.pdf`.",
+            "Upload a PDF CV to use instead of the default `resume.pdf`.",
             type=["pdf"],
         )
 
@@ -383,7 +383,7 @@ def show_chat() -> None:
     for turn in reversed(st.session_state.history):
         st.markdown(f"**You:** {turn['question']}")
         st.markdown(f"**Your CV answered:** {turn['answer']}")
-        with st.expander("Show resume snippets used for this answer"):
+        with st.expander("Show CV snippets used for this answer"):
             for i, snippet in enumerate(turn["sources"], start=1):
                 st.markdown(f"**Snippet {i}:**")
                 st.code(snippet[:1200])
