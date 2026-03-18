@@ -11,12 +11,12 @@ For this small demo, whose concept was **RAG (Retrieval‑Augmented Generation)*
 - **Cursor** as the AI-IDE of choice
 - **Python** as the main programming language for the app
 - **Windows PowerShell** as terminal environment for running commands
-- **RAG (Retrieval‑Augmented Generation)** over my CV using **LangChain + ChromaDB**
+- **LangChain + ChromaDB** as the orchestration layer
+- **ChromaDB** as vector database to store embeddings
 - **Streamlit** for the web app framework
 - **PyPDF2** to extract text from the CV file
 - **OpenAI embeddings** to build a searchable vector index
 - **OpenAI chat** to generate grounded answers
-- **ChromaDB** to store the embeddings
 - **Git + GitHub** for version control and publishing the codebase 
 - **Streamlit Secrets** for secure storage of API key
 - **Streamlit Community Cloud**: For deploying
@@ -47,7 +47,7 @@ For this small demo, whose concept was **RAG (Retrieval‑Augmented Generation)*
 
 ## Chat with my CV
 
-- Use the **“Chat with my CV”** tab to ask questions like:
+- Use the [**“Chat with my CV”**](https://tryfonas-cv.streamlit.app/~/+/?view=chat) tab to ask questions like:
   - “What tools do I mention experience with?”
   - “Summarize my responsibilities in my latest role.”
   - “What is the favorite cooking recipe of the applicant?”
