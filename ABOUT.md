@@ -6,12 +6,22 @@ This “interactive CV” is a small GenAI engineering demo that shows I can bui
 
 ## Tools that were used
 
-For this small demo, the below technologies were used:
+For this small demo, whose concept was **RAG (Retrieval‑Augmented Generation)** over any CV, the below technologies were used:
 
+- **Cursor** as the AI-IDE of choice
+- **Python** as the main programming language for the app
+- **Windows PowerShell** as terminal environment for running commands
 - **RAG (Retrieval‑Augmented Generation)** over my CV using **LangChain + ChromaDB**
+- **Streamlit** for the web app framework
+- **PyPDF2** to extract text from the CV file
 - **OpenAI embeddings** to build a searchable vector index
-- **Chat interface** that answers **based only on -in our case- resume context**, with visible snippets
-- I tried basic **access control** via password gate but it was causing more issues than it was solving, so I am sticking to **rate limiting** for now, to avoid abuse
+- **OpenAI chat** to generate grounded answers
+- **ChromaDB** to store the embeddings
+- **Git + GitHub** for version control and publishing the codebase 
+- **Streamlit Secrets** for secure storage of API key
+- **Streamlit Community Cloud**: For deploying
+- **Chat interface** that answers based only on, in our case, resume context - with visible snippets
+- I tried basic **access control** via password gate but it was causing more issues than it was solving, so I stuck to **rate limiting** to prevent API abuse
 
 ## Why this role, and why me
 
