@@ -11,7 +11,7 @@ For this small demo, whose concept was **RAG (Retrieval‑Augmented Generation)*
 - **Cursor** as the AI-IDE of choice
 - **Python** as the main programming language for the app
 - **Windows PowerShell** as terminal environment for running commands
-- **LangChain + ChromaDB** as the orchestration layer
+- **LangChain** as the orchestration layer
 - **ChromaDB** as vector database to store embeddings
 - **Streamlit** for the web app framework
 - **PyPDF2** to extract text from the CV file
